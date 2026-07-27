@@ -1,0 +1,25 @@
+# dependencies / build output
+node_modules/
+dist/
+.vite_cache/
+*.tsbuildinfo
+
+# secrets — root .env holds the GitHub token, never publish it
+/.env
+
+# env — commit frontend .env and .env.example only; never local overrides
+.env.local
+.env.*.local
+
+# vercel
+.vercel/
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# os / logs
+.DS_Store
+Thumbs.db
+*.log
